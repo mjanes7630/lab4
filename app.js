@@ -20,6 +20,10 @@ app.get("/earth", function(req, res){
     res.render("earth.html");
 });
 
+app.get("/pluto", function(req, res){
+    res.render("pluto.html");
+})
+
 //starting server
 app.listen(process.env.PORT, process.envIP, function(){
     console.log("Express server is running...");
